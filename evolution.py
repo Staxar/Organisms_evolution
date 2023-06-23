@@ -62,6 +62,5 @@ for generation in range(num_generations):
     population = parents + offspring
     population = mutation(population, mutation_rate)
 
-    # Wyświetlanie informacji o każdej generacji
     best_organism = max(population, key=lambda x: x.fitness())
     print(f"Generation: {generation+1}  Best Fitness: {best_organism.fitness()}")
